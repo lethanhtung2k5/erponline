@@ -45,4 +45,14 @@ Route::group(['prefix' => 'admincp'], function () {
 	Route::post('createTypeCustomer', 'Admin\TypeCustomerController@createTypeCustomer');
 	Route::get('editTypeCustomer/{id}', 'Admin\TypeCustomerController@editTypeCustomer');
 	Route::post('updateTypeCustomer', 'Admin\TypeCustomerController@updateTypeCustomer');
+
+	Route::get('employee', ['as' => 'listEmployee', 'uses' => 'Admin\EmployeeController@listEmployee']);
+	Route::post('createEmployee', 'Admin\EmployeeController@createEmployee');
+	Route::get('editEmployee/{id}', 'Admin\EmployeeController@editEmployee');
+	Route::post('updateEmployee', 'Admin\EmployeeController@updateEmployee');
+
+	Route::get('customer', ['as' => 'listCustomer', 'uses' => 'Admin\CustomerController@listCustomer']);
+	Route::post('createCustomer', 'Admin\CustomerController@createCustomer');
+	Route::get('editCustomer/{id}', 'Admin\CustomerController@editCustomer');
+	Route::post('updateCustomer', 'Admin\CustomerController@updateCustomer');
 });
