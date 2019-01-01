@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             ['fullname' => 'Lê Thanh Tùng'],
             ['password' => bcrypt(123456)],
             ['email' => 'lethanhtung2k5@gmail.com'],
+            ['phone'] => '0776818048'
         ]);
     }
 }
