@@ -19,6 +19,32 @@
     <ul>
       <li>
         <a href="javascript:;"> 
+          <i class="material-icons">person</i> 
+          <span class="title">Nhân viên</span> 
+          <span class=" arrow"></span> 
+        </a>
+
+        <ul class="sub-menu">
+          <li> <a href="/admincp/employee">Danh sách nhân viên</a> </li>
+          
+        </ul>
+      </li>
+
+      <li>
+        <a href="javascript:;"> 
+          <i class="material-icons">group</i> 
+          <span class="title">Khách hàng</span> 
+          <span class=" arrow"></span> 
+        </a>
+
+        <ul class="sub-menu">
+          <li> <a href="/admincp/customer">Danh sách khách hàng</a> </li>
+          
+        </ul>
+      </li>
+
+      <li>
+        <a href="javascript:;"> 
           <i class="material-icons">settings</i> 
           <span class="title">Thiết lập</span> 
           <span class=" arrow"></span> 

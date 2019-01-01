@@ -25,7 +25,7 @@ class DepartmentController extends Controller
 
     public function createDepartment(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$data = $this->service->createDepartment($input);
 
     	return redirect('admincp/department');
@@ -44,7 +44,7 @@ class DepartmentController extends Controller
 
     public function updateDepartment(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$this->service->updateDepartment($input);
 
     	return redirect('admincp/department');

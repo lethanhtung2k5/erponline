@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/plugins/shape-hover/css/component.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/plugins/owl-carousel/owl.carousel.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/plugins/owl-carousel/owl.theme.css') }}" />
+    <link href="{{ asset('admin/assets/plugins/jquery-notifications/css/messenger.css') }}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ asset('admin/assets/plugins/jquery-notifications/css/messenger-theme-flat.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ asset('admin/assets/plugins/pace/pace-theme-flash.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ asset('admin/assets/plugins/jquery-slider/css/jquery.sidr.light.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{ asset('admin/assets/plugins/jquery-ricksaw-chart/css/rickshaw.css') }}" type="text/css" media="screen">
@@ -86,5 +88,12 @@
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script src="{{ asset('admin/assets/js/dashboard_v2.js') }}" type="text/javascript"></script>
+    <!--script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script-->
+    <script src="{{ asset('admin/assets/plugins/jquery-notifications/js/messenger.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('admin/assets/plugins/jquery-notifications/js/messenger-theme-future.js') }}" type="text/javascript"></script>
+    <!--script type="text/javascript" src="{{ asset('admin/assets/plugins/jquery-notifications/js/demo/location-sel.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/assets/plugins/jquery-notifications/js/demo/theme-sel.js') }}"></script-->
+    <script src="{{ asset('admin/assets/js/notifications.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('admin/assets/js/custom.js') }}" type="text/javascript"></script>
   </body>
 </html>

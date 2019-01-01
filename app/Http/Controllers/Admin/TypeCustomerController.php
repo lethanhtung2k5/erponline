@@ -25,7 +25,7 @@ class TypeCustomerController extends Controller
 
     public function createTypeCustomer(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$data = $this->service->createTypeCustomer($input);
 
     	return redirect('admincp/typeCustomer');
@@ -44,7 +44,7 @@ class TypeCustomerController extends Controller
 
     public function updateTypeCustomer(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$this->service->updateTypeCustomer($input);
 
     	return redirect('admincp/typeCustomer');

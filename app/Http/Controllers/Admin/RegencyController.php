@@ -25,7 +25,7 @@ class RegencyController extends Controller
 
     public function createRegency(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$data = $this->service->createRegency($input);
 
     	return redirect('admincp/regency');
@@ -44,7 +44,7 @@ class RegencyController extends Controller
 
     public function updateRegency(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$this->service->updateRegency($input);
 
     	return redirect('admincp/regency');

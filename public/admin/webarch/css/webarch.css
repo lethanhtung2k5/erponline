@@ -4977,9 +4977,9 @@ form legend,
   border-bottom: 0px;
 }
 .grid.simple .form-actions {
-  margin-right: -26px !important;
-  margin-left: -26px !important;
-  margin-bottom: -26px !important;
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+  margin-bottom: -15px !important;
 }
 .grid.simple.transparent .grid-body {
   background-color: transparent !important;
@@ -4992,7 +4992,7 @@ form legend,
 }
 .grid.simple .grid-body {
   background-color: #ffffff;
-  padding: 26px;
+  padding: 15px;
   border: 1px solid #dddddd;
   color: #6f7b8a;
 }

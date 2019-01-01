@@ -45,4 +45,22 @@ Route::group(['prefix' => 'admincp'], function () {
 	Route::post('createTypeCustomer', 'Admin\TypeCustomerController@createTypeCustomer');
 	Route::get('editTypeCustomer/{id}', 'Admin\TypeCustomerController@editTypeCustomer');
 	Route::post('updateTypeCustomer', 'Admin\TypeCustomerController@updateTypeCustomer');
+
+	Route::get('employee', ['as' => 'listEmployee', 'uses' => 'Admin\EmployeeController@listEmployee']);
+	Route::get('addEmployee', 'Admin\EmployeeController@addEmployee');
+	Route::post('createEmployee', 'Admin\EmployeeController@createEmployee');
+	Route::get('editEmployee/{id}', 'Admin\EmployeeController@editEmployee');
+	Route::post('updateEmployee', 'Admin\EmployeeController@updateEmployee');
+	Route::get('deleteEmployee/{id}', 'Admin\EmployeeController@deleteEmployee');
+
+	Route::get('customer', ['as' => 'listCustomer', 'uses' => 'Admin\CustomerController@listCustomer']);
+	Route::get('addCustomer', 'Admin\CustomerController@addCustomer');
+	Route::post('createCustomer', 'Admin\CustomerController@createCustomer');
+	Route::get('editCustomer/{id}', 'Admin\CustomerController@editCustomer');
+	Route::post('updateCustomer', 'Admin\CustomerController@updateCustomer');
+	Route::get('deleteCustomer/{id}', 'Admin\CustomerController@deleteCustomer');
+});
+
+Route::group(['prefix' => 'ajax'], function () {
+	Route::post('loadDistrict', 'AjaxController@loadDistrict');
 });

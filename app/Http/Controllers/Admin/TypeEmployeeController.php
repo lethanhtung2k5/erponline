@@ -25,7 +25,7 @@ class TypeEmployeeController extends Controller
 
     public function createTypeEmployee(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$data = $this->service->createTypeEmployee($input);
 
     	return redirect('admincp/typeEmployee');
@@ -44,7 +44,7 @@ class TypeEmployeeController extends Controller
 
     public function updateTypeEmployee(Request $request)
     {
-    	$input = $request->except('_token');;
+    	$input = $request->except('_token');
     	$this->service->updateTypeEmployee($input);
 
     	return redirect('admincp/typeEmployee');
