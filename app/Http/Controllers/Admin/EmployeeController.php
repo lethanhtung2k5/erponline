@@ -8,6 +8,7 @@ use App\Services\EmployeeService;
 use App\Services\DepartmentService;
 use App\Services\RegencyService;
 use App\Services\TypeEmployeeService;
+use Carbon\Carbon;
 
 class EmployeeController extends Controller
 {
@@ -44,6 +45,10 @@ class EmployeeController extends Controller
     {
     	$input = $request->except('_token');
     	$input['password'] = bcrypt($input['password']);
+        if($input['birthday']) {
+            $arr = explode("/", $input['birthday']);
+            $input['birthday'] = Carbon::createFromDate($arr[2], $arr[1], $arr[0]);
+        }
     	$data = $this->service->createEmployee($input);
 
     	return redirect('admincp/employee');
@@ -68,6 +73,10 @@ class EmployeeController extends Controller
     		$input = $request->except('password');
     	else
     		$input['password'] = bcrypt($input['password']);
+        if($input['birthday']) {
+            $arr = explode("/", $input['birthday']);
+            $input['birthday'] = Carbon::createFromDate($arr[2], $arr[1], $arr[0]);
+        }
     	$this->service->updateEmployee($input);
 
     	return redirect('admincp/employee');

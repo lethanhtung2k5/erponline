@@ -13,10 +13,10 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         DB::table('users)->insert([
-            ['fullname' => 'Lê Thanh Tùng'],
-            ['password' => bcrypt(123456)],
-            ['email' => 'lethanhtung2k5@gmail.com'],
-            ['phone'] => '0776818048'
+            'fullname' => 'Lê Thanh Tùng',
+            'password' => bcrypt(123456),
+            'email' => 'lethanhtung2k5@gmail.com',
+            'phone' => '0776818048'
         ]);
     }
 }

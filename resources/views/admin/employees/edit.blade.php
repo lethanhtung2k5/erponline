@@ -47,7 +47,7 @@
 									<div class="col-md-3">
 										<label class="form-label">Ngày sinh</label>
 										<div class="controls">
-											<input type="text" class="form-control" name="birthday" value="{{ $obj->birthday }}" />
+											<input type="text" class="form-control" name="birthday" value="{{ date('d/m/Y', strtotime($obj->birthday)) }}" />
 										</div> 
 									</div> 
 
