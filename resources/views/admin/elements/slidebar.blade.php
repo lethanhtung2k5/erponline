@@ -45,6 +45,19 @@
 
       <li>
         <a href="javascript:;"> 
+          <i class="material-icons">apps</i> 
+          <span class="title">Sản phẩm</span> 
+          <span class=" arrow"></span> 
+        </a>
+
+        <ul class="sub-menu">
+          <li> <a href="/admincp/products">Danh sách sản phẩm</a> </li>
+          <li> <a href="/admincp/warehouse">Danh sách kho hàng</a> </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="javascript:;"> 
           <i class="material-icons">settings</i> 
           <span class="title">Thiết lập</span> 
           <span class=" arrow"></span> 

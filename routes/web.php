@@ -59,6 +59,11 @@ Route::group(['prefix' => 'admincp'], function () {
 	Route::get('editCustomer/{id}', 'Admin\CustomerController@editCustomer');
 	Route::post('updateCustomer', 'Admin\CustomerController@updateCustomer');
 	Route::get('deleteCustomer/{id}', 'Admin\CustomerController@deleteCustomer');
+
+	Route::get('warehouse', ['as' => 'listWarehouse', 'uses' => 'Admin\WarehouseController@listWarehouse']);
+	Route::post('createWarehouse', 'Admin\WarehouseController@createWarehouse');
+	Route::get('editWarehouse/{id}', 'Admin\WarehouseController@editWarehouse');
+	Route::post('updateWarehouse', 'Admin\WarehouseController@updateWarehouse');
 });
 
 Route::group(['prefix' => 'ajax'], function () {
